@@ -1,0 +1,14 @@
+name = "bizyair-task-viewer"
+main = "src/worker.js"
+compatibility_date = "2024-12-01"
+
+# bizyair.1986318.xyz 改由 cloudflared 命名隧道提供，不再走 Worker
+# routes = [
+#   { pattern = "bizyair.1986318.xyz", custom_domain = true }
+# ]
+workers_dev = true
+
+# KV 命名空间
+[[kv_namespaces]]
+binding = "TASK_KV"
+id = "941af3b7157f4e5ca3c614d6c37fb5d6"
